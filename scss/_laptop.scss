@@ -1,0 +1,72 @@
+.lappy {
+    padding: 40px 0;
+    background-color: $org;
+
+
+    .laptop {
+        position: relative;
+        left: 400px;
+        background-image: url(../assets/svgexport-14.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60vw;
+        height: 130vh;
+        padding-top: 100px;
+
+        img {
+            padding-top: 80px;
+            width: 50vw;
+
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: 230px 230px 230px;
+            grid-gap: 80px;
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+            top: -120px;
+            left: 200px;
+            padding-left: 40px;
+
+            .card-img-top {
+                padding-top: 40px;
+                width: 90%;
+                padding-left: 20px;
+                height: auto;
+
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .lappy{
+        padding-bottom: 550px;
+        .laptop{
+            position: relative;
+            left: 10px;
+            top: -400px;
+            width: 92vw;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 85vw;
+                padding-top: 330px;
+            }
+            .grid2{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: -40px;
+                left: 40px;
+                width: 60vw;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,691 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navi {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 80px;
+}
+.navi .navi1 {
+  display: flex;
+  justify-content: space-between;
+}
+.navi .logo {
+  width: 60px;
+}
+
+.circle {
+  height: 73vh;
+  background-image: url(../assets/01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 180px;
+  padding-left: 45vw;
+}
+.circle h1 {
+  padding: 8px 0;
+  letter-spacing: 8px;
+  font-size: 30px;
+}
+.circle h2 {
+  color: black;
+  font-size: 110px;
+  font-weight: bolder;
+  line-height: 0.8;
+}
+.circle p {
+  font-size: 16px;
+  padding: 8px 0;
+}
+.circle p a {
+  color: black;
+}
+.circle button {
+  padding: 6px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .circle {
+    height: 50vh;
+    background-position: start;
+    padding: 10px;
+    padding-left: 10vw;
+    padding-top: 4rem;
+  }
+  .circle h1 {
+    font-size: 20px;
+    font-weight: light;
+  }
+  .circle h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 0.8;
+  }
+  .circle p {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+  .circle p a {
+    color: black;
+  }
+}
+.svgs {
+  height: 110vh;
+}
+.svgs .container {
+  width: 70%;
+  height: 90vh;
+  position: relative;
+  left: 100px;
+}
+.svgs .container .dots {
+  width: 12vw;
+  position: relative;
+  top: 16vh;
+  left: 42vw;
+  z-index: 3;
+}
+.svgs .container .lines {
+  background-color: #000000;
+  opacity: 1;
+  background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 10px, #000000 3.5px, #000000 18px);
+  width: 32vw;
+  height: 28vw;
+  position: relative;
+  left: 28vw;
+  top: -18vw;
+  z-index: 1;
+  padding-top: 60px;
+}
+.svgs .container .clock {
+  position: relative;
+  z-index: 2;
+}
+.svgs .container .clock img {
+  width: 50vw;
+}
+.svgs .container .grd-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  grid-template-columns: 13vw 13vw;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  position: absolute;
+  top: 23vw;
+  left: 30vw;
+}
+.svgs .container .grd-item {
+  background-color: #ffffff;
+  /* Replace with your desired background color */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+.svgs .container .grd-item .camera {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background-color: rgb(242, 184, 45);
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svgs .container .grd-item .camera img {
+  width: 3vw;
+}
+.svgs .container .grd-item p {
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .svgs {
+    padding: 0;
+    margin: 0;
+  }
+  .svgs .container {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 0px;
+  }
+  .svgs .container .dots {
+    min-width: 150px;
+    left: 240px;
+    top: 65px;
+  }
+  .svgs .container .lines {
+    width: 90vw;
+    height: 110vw;
+    position: relative;
+    left: 8vw;
+    top: -19vw;
+    z-index: 1;
+    padding-top: 60px;
+  }
+  .svgs .container .clock {
+    min-width: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .svgs .container .clock img {
+    width: 100%;
+  }
+  .svgs .container .grd-container {
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    position: absolute;
+    top: 50vw;
+    left: 0;
+  }
+  .svgs .container .grd-item .camera {
+    min-width: 25vw;
+    min-height: 25vw;
+  }
+  .svgs .container .grd-item .camera img {
+    min-width: 12vw;
+  }
+}
+.girl {
+  padding-bottom: 80px;
+}
+.girl #gimg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: auto;
+}
+.girl #gimg img {
+  width: 550px;
+}
+.girl .rect {
+  width: 600px;
+  height: 100px;
+  background-color: rgb(242, 184, 45);
+  position: relative;
+  top: 200px;
+  left: 620px;
+}
+.girl .info {
+  width: 60vh;
+  height: 50vh;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  padding: 70PX 20px;
+  margin: 20px 70px;
+}
+.girl .info h6 {
+  width: 90%;
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: bolder;
+  color: black;
+}
+.girl .info p {
+  margin: 20px;
+  font-size: 1.1rem;
+}
+.girl .info button {
+  margin: 10px;
+  padding: 8px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .girl {
+    position: relative;
+    top: -200px;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    padding-bottom: -100px;
+  }
+  .girl .rect {
+    width: 260px;
+    height: 80px;
+    background-color: rgb(242, 184, 45);
+    position: relative;
+    top: 120px;
+    left: 0px;
+  }
+  .girl #gimg {
+    flex-direction: column;
+    width: 80vw;
+    padding-left: 0;
+    margin: 0;
+  }
+  .girl #gimg img {
+    width: 80vw;
+    margin-bottom: 60px;
+  }
+  .girl #gimg .info {
+    width: 200px;
+    min-width: 80vw;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 0px;
+  }
+}
+.lappy {
+  padding: 40px 0;
+  background-color: rgb(242, 184, 45);
+}
+.lappy .laptop {
+  position: relative;
+  left: 400px;
+  background-image: url(../assets/svgexport-14.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 60vw;
+  height: 130vh;
+  padding-top: 100px;
+}
+.lappy .laptop img {
+  padding-top: 80px;
+  width: 50vw;
+}
+.lappy .laptop .grid2 {
+  display: grid;
+  grid-template-columns: 230px 230px 230px;
+  grid-gap: 80px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  top: -120px;
+  left: 200px;
+  padding-left: 40px;
+}
+.lappy .laptop .grid2 .card-img-top {
+  padding-top: 40px;
+  width: 90%;
+  padding-left: 20px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .lappy {
+    padding-bottom: 550px;
+  }
+  .lappy .laptop {
+    position: relative;
+    left: 10px;
+    top: -400px;
+    width: 92vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .lappy .laptop img {
+    width: 85vw;
+    padding-top: 330px;
+  }
+  .lappy .laptop .grid2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -40px;
+    left: 40px;
+    width: 60vw;
+  }
+}
+.work {
+  text-align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.work h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 30px;
+}
+.work .uline {
+  width: 200px;
+  height: 10px;
+  color: rgb(69, 69, 69);
+  font-size: 300px;
+  background-color: rgb(69, 69, 69);
+  margin-bottom: 80px;
+}
+.work .grid8 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  padding-bottom: 20px;
+}
+.work .grid8 div {
+  width: 24.8vw;
+  height: 16vw;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work .grid8 div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .work .uline {
+    margin-bottom: 60px;
+  }
+  .work .grid8 {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .work .grid8 div {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+.we {
+  display: flex;
+  justify-content: center;
+}
+.we .right {
+  width: 30vw;
+  height: 26vw;
+  padding: 40px;
+  margin: 30px;
+}
+.we .right span {
+  line-height: 0.5;
+}
+.we .right h1 {
+  font-weight: bolder;
+  font-size: 3.3rem;
+  letter-spacing: 0px;
+}
+.we .right p {
+  letter-spacing: 2px;
+}
+.we .right button {
+  margin: 10px;
+  padding: 8px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+}
+.we .monitor {
+  width: 30vw;
+  height: 26vw;
+  background-color: rgb(242, 242, 242);
+}
+.we .monitor img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .we {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 210vw;
+  }
+  .we .monitor {
+    width: 90%;
+    height: 80vw;
+    margin: 0px;
+    margin-left: 5vw;
+    padding: 20px;
+  }
+  .we .right {
+    width: 100vw;
+    height: 100vw;
+    margin: 0px;
+  }
+  .we .right h1 {
+    font-size: 1.9rem;
+  }
+}
+.market {
+  background-color: rgb(242, 184, 45);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+}
+.market .info {
+  width: 55vw;
+  text-align: center;
+  padding-top: 80px;
+}
+.market .info h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.market .info p {
+  font-size: 1.2rem;
+}
+.market .grid3 {
+  width: 60vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+.market .grid3 div {
+  padding: 20px;
+}
+.market .grid3 div h6 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 10px;
+}
+.market .freepik {
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .market {
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: start;
+  }
+  .market .info {
+    width: 100vw;
+    text-align: start;
+    padding: 30px;
+  }
+  .market .info h1 {
+    font-size: 2rem;
+  }
+  .market .grid3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .market .grid3 div {
+    width: 85vw;
+    padding: 30px;
+  }
+}
+.clients {
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+}
+.clients .left {
+  width: 30vw;
+  height: auto;
+}
+.clients .left h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.clients .left p {
+  text-align: start;
+  padding: 20px 0;
+  padding-right: 120px;
+  line-height: 2;
+  color: white;
+}
+.clients .left button {
+  margin: 10px;
+  padding: 6px 30px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+}
+.clients .grid4 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 50px;
+  grid-row-gap: 80px;
+}
+.clients .grid4 img {
+  width: 150px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .clients {
+    flex-direction: column;
+    padding: 0px;
+    padding-bottom: 100px;
+  }
+  .clients .left {
+    width: 100%;
+    padding: 40px;
+  }
+  .clients .left h1 {
+    font-size: 2rem;
+  }
+  .clients .left p {
+    padding: 0px;
+  }
+  .clients .grid4 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+.contact {
+  height: auto;
+  display: flex;
+  justify-content: end;
+  background-image: url(../assets/back.jpg);
+}
+.contact .frm {
+  display: flex;
+  flex-direction: column;
+  padding-right: 200px;
+  justify-content: center;
+  text-align: center;
+}
+.contact .frm h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-bottom: 25px;
+}
+.contact .frm input {
+  padding: 15px;
+  width: 380px;
+}
+.contact .frm .all {
+  border: none;
+  margin: 10px;
+}
+.contact .frm button {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+.contact .frm p {
+  margin-top: 40px;
+}
+.contact .min {
+  width: 42vw;
+  height: 35vw;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.contact .min img {
+  width: 130%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact .frm {
+    align-items: center;
+    padding-right: 0px;
+  }
+  .contact .frm input {
+    width: 80vw;
+  }
+  .contact .frm button {
+    width: 80vw;
+  }
+  .contact .min {
+    padding: 0px;
+    width: 95vw;
+    height: 95vw;
+  }
+  .contact .min img {
+    width: 110%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+.footer {
+  height: 250px;
+  padding-top: 10px;
+  background-color: rgb(51, 51, 51);
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}/*# sourceMappingURL=main.css.map */

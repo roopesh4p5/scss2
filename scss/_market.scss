@@ -1,0 +1,69 @@
+.market{
+    background-color: $org;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:  max-content;
+    .info{
+        width: 55vw;
+        text-align: center;
+        padding-top: 80px;
+        h1{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+
+    
+    }
+    .grid3{
+        
+        width: 60vw;
+        height:auto;
+        // background-color: red;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        div{
+            padding: 20px;
+            h6{
+                font-size: 1.5rem;
+                font-weight: bolder;
+                padding: 10px;
+            }
+        }
+
+    }
+    .freepik{
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+    
+}
+
+
+@media only screen and (max-width:600px){
+    .market{
+        height: fit-content;
+        align-items: start;
+        .info{
+            width: 100vw;
+            text-align: start;
+            padding: 30px;
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .grid3{
+            display: flex;
+            flex-direction: column;
+           div{
+            width: 85vw;
+            padding: 30px;
+           }
+        }
+    }
+}

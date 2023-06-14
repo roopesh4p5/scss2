@@ -1,0 +1,162 @@
+.svgs {
+    height: 110vh;
+    // background-color: aquamarine;
+    // padding: 100px;
+
+    .container {
+        width: 70%;
+        height: 90vh;
+        // background-color: green;
+        position: relative;
+        left: 100px;
+
+        .dots {
+            width: 12vw;
+            position: relative;
+            top: 16vh;
+            left: 42vw;
+            z-index: 3;
+        }
+
+        .lines {
+            background-color: #000000;
+            opacity: 1;
+            background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 10px, #000000 3.5px, #000000 18px);
+            width: 32vw;
+            height: 28vw;
+            position: relative;
+            left: 28vw;
+            top: -18vw;
+            z-index: 1;
+            padding-top: 60px;
+
+
+        }
+
+        .clock {
+            position: relative;
+            z-index: 2;
+
+            img {
+                width: 50vw;
+            }
+        }
+
+        .grd-container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            grid-template-columns: 13vw 13vw;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            position: absolute;
+            top: 23vw;
+            left: 30vw;
+        }
+
+        .grd-item {
+
+            background-color: #ffffff;
+            /* Replace with your desired background color */
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 3;
+
+            .camera {
+                width: 5vw;
+                height: 5vw;
+                border-radius: 50%;
+                background-color:$org;
+                margin: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 3vw;
+                }
+               
+            }
+            p{
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .svgs {
+        padding: 0;
+        margin: 0;
+
+        .container {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            left: 0px;
+
+            .dots {
+                min-width: 150px;
+                left: 240px;
+                top: 65px;
+
+
+                // width: 30vw;
+            }
+            .lines{
+                width: 90vw;
+                height: 110vw;
+                position: relative;
+                left: 8vw;
+                top: -19vw;
+                z-index: 1;
+                padding-top: 60px;
+    
+            }
+
+            .clock {
+                img {
+
+                    width: 100%;
+                }
+
+                min-width: 360px;
+                object-fit: cover;
+
+            }
+
+            .grd-container {
+                grid-template-columns: 42vw 42vw;
+                grid-template-rows: auto auto;
+                gap: 10px;
+                position: absolute;
+                top: 50vw;
+                left: 0;
+
+            }
+
+            .grd-item {
+                .camera {
+                    min-width: 25vw;
+                    min-height: 25vw;
+
+                    img {
+                        min-width: 12vw;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+

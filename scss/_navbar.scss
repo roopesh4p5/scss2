@@ -1,0 +1,15 @@
+.navi {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 80px;
+    
+
+    .navi1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 60px;
+    }
+}
